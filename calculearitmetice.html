@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule aritmetice</title>
+</head>
+<body>
+    <script>
+var unu = prompt("Numar");
+var doi = prompt("Operatie");
+var trei = prompt("introduce numar stabilit");
+var numbera = parseFloat(unu);
+var numberb = parseFloat(trei);
+
+if( !isNaN (numbera) && !isNaN (numberb))
+{
+if(doi == '+'){
+    var rezultat = numbera + numberb;
+    alert('Rezultatul adunarii este: ' + rezultat)
+}else if(doi =='-'){
+    var rezultat = numbera - numberb;
+    alert('Rezultatul scaderii este: ' + rezultat)
+}else if(doi == '*'){
+    var rezultat = numbera * numberb;
+    alert('Rezultatul inmultirii este: ' + rezultat)
+}else if(doi =='/'){
+    if( numberb == 0){
+        alert('Nu se poate efectua operatia')
+    }else{ 
+        var rezultat = numbera / numberb;
+        alert('Rezultatul impartirii este: ' + rezultat);
+    }
+}else{
+    alert('Operatia' + doi + 'nu este una elementara');
+}
+
+
+}else{alert("Operatia nu poate fi efectuata")}
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
